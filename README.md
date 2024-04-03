@@ -1,8 +1,10 @@
 # Game On
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 ## Description
 The Game On News is a web application dedicated to providing users with the latest updates, reviews, and articles related to the gaming industry. It offers a centralized platform for gamers and enthusiasts to stay informed about the world of video games.
 
-![image](https://github.com/higinosk/video-game-news-page/assets/76918008/9269a60b-a669-4142-98fa-a35560dba1f8)
+![Thumbnail](https://github.com/higinosk/video-game-news-page/assets/76918008/9269a60b-a669-4142-98fa-a35560dba1f8)
 
 With a user-friendly interface and intuitive navigation, the Game On aims to keep users abreast of the cutting-edge developments, trends, and happenings within the gaming industry, ensuring they stay ahead in their gaming pursuits and remain deeply engaged with their passion for gaming.
 
@@ -27,3 +29,11 @@ You can also clone the project and open it in localhost, or enjoy the preview vi
 * Clone the repository to your local machine: git clone https://github.com/higinosk/game-on-news.
 * Navigate to the project directory: cd video-game-news-page
 * Open the index.html file in your preferred web browser.
+
+## Contributors
+[//]: contributor-faces
+
+<a href="https://github.com/higinosk"><img src="https://avatars.githubusercontent.com/u/76918008?v=4" title="Kamilly Higino" width="80" height="80"></a>
+
+[//]: contributor-faces
+
