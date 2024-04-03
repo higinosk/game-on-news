@@ -11,6 +11,10 @@ With a user-friendly interface and intuitive navigation, the Game On aims to kee
 * Display latest gaming news articles
 * Filter articles by category (e.g., reviews, updates, announcements)
 * Responsive design for optimal viewing on different devices
+
+## Tech Stack
+* HTML5
+* CSS3
   
 ## Demo
 
