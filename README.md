@@ -33,7 +33,7 @@ You can also clone the project and open it in localhost, or enjoy the preview vi
 ## Contributors
 [//]: contributor-faces
 
-<a href="https://github.com/higinosk"><img src="https://avatars.githubusercontent.com/u/76918008?v=4" title="Kamilly Higino" width="80" height="80"></a>
+<a href="https://github.com/higinosk"><img src="https://avatars.githubusercontent.com/u/76918008?v=4" title="Kamilly Higino" width="100" height="100"></a>
 
 [//]: contributor-faces
 
