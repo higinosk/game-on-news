@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+@font-face {
+    font-family: "biennale";
+    src: url(fonts/Demo_Fonts/Fontspring-DEMO-biennale-black.otf) format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+:root {
+    --principal-font: "biennale", serif;
+    --secondary-font: "Newsreader", sans-serif;
+    --tertiary-font: "IBM Plex Sans", sans-serif;
+    --quaternary-font: "IBM Plex Sans Condensed", sans-serif;
+    --color1: #000000;
+    --color2: #050A30;
+    --color3: #4C5570;
+    --color4: #5E17EB;
+    --color5: #E34234;
+    --color6: #F4F6FC;
+    --color7: #FFBD59;
+    --color8: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font: 100% var(--quaternary-font);
+    color: var(--color1);
+    height: 100vh;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+a:hover {
+    color: var(--color4);
+}
+
+p, h3, h4 {
+    text-transform: none;
+}
+
+.site-logo {
+    height: 80px;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px; /* Espaçamento entre os itens */
+    padding-right: 10px; /* Espaçamento interno direito para a barra */
+    border-right: 1px solid var(--color3); /* Adiciona uma borda direita */
+}
+
+.menu li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none; /* Remove a borda direita do último item */
+}
+
+.menu li a {
+    color: var(--color3)!important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    outline: 0;
+    position: relative; /* Adiciona posição relativa para alinhar o underline */
+}
+
+.menu li a::after {
+    content: ''; /* Cria um pseudo-elemento para o underline */
+    position: absolute; /* Define a posição absoluta em relação ao link */
+    left: 0; /* Alinha o underline com o início do texto */
+    bottom: -3px; /* Move o underline para baixo para estar abaixo do texto */
+    width: 100%; /* Largura total do underline */
+    height: 2px; /* Altura inicial do underline */
+    background-color: transparent; /* Cor inicial do underline */
+    transition: height 0.3s, background-color 0.3s; /* Transição suave */
+}
+
+.menu li a:hover::after {
+    height: 4px; /* Altura aumentada do underline ao passar o mouse */
+    background-color: var(--color7); /* Cor do underline ao passar o mouse */
+}
+
+.header-icon {
+    height: 30px;
+    display: inline;
+    margin-right: 5px; 
+    padding-right: 5px;
+}
+
+.social-icon {
+    color: var(--color7);
+    font-size: 20px;
+}
+
+.header-icon a:hover {
+    color: var(--color5);
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-image: url('images/coor.png');
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    background-position: right top;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.main-section {
+    flex-basis: 60%;
+    margin-right: 20px;
+    position: relative;
+}
+.main-section img {
+    width: 800px;
+    height: unset;
+}
+.main-section h1 {
+    font-family: var(--principal-font);
+    color: var(--color6);
+    text-transform: capitalize;
+    font-size: 68px;
+    font-weight: 900;
+    position: absolute; /* Posicionamento absoluto */
+    top: 0; /* Alinha o topo do h1 com o topo da .right-section */
+    left: 0; /* Alinha a borda direita do h1 com a borda direita da .right-section */
+    margin: -50px; /* Adiciona um espaçamento para evitar que o texto encoste nas bordas */
+    margin-left: -20px;
+}
+
+.text-overlay h2 {
+    font-family: var(--principal-font);
+    font-size: 22px;
+}
+
+.text-overlay h3 {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-overlay p {
+    font-family: var(--secondary-font);
+    font-size: 15px;
+    font-weight: regular;
+    font-style: oblique;
+}
+
+.second-section {
+    margin: 50px 0; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    gap: 50px;
+}
+
+.second-section img {
+    width: 100%;
+    height: auto;
+}
+
+aside {
+    flex-basis: 30%;
+}
+
+.right-section {
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 0.4px solid #4c55702f;
+    position: relative;
+}
+
+.right-section:last-of-type {
+    border-bottom: none;
+}
+.right-section img {
+    width: 100%;
+    height: auto;
+}
+.right-section a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.right-section a:hover {
+    color: var(--color4);
+}
+
+.right-section h1 {
+    font-family: var(--principal-font);
+    color: var(--color7);
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 900;
+    position: absolute; /* Posicionamento absoluto */
+    top: 0; /* Alinha o topo do h1 com o topo da .right-section */
+    left: 0; /* Alinha a borda direita do h1 com a borda direita da .right-section */
+    margin: -25px; /* Adiciona um espaçamento para evitar que o texto encoste nas bordas */
+    margin-left: -10px;
+}
+
+.right-section h4 {
+    font-family: var(--principal-font);
+    display: block;
+    font-size: 22px;
+}
+
+.right-section p {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-style: oblique;
+}
+
+.right-section p a {
+    text-decoration: none;
+    color: var(--color5);
+}
+
+.right-section p a:hover {
+    color: var(--color7);
+    transition: 0.5s;
+}
+
+.aside-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid var(--color3);
+    color: var(--color3);
+    background-color: var(--color8);
+    font-family: var(--principal-font);
+    font-size: 15px;
+}
+
+.aside-button:hover {
+    color: var(--color7);
+    border: 1px solid var(--color7);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #202020;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer img {
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.copyright-footer {
+    margin-top: 10px;
+    font-family: var(--tertiary-font);
+    color: var(--color5);
+    font-weight: 500;
+}
+
+/*smartphone*/
+
+@media screen and (max-width: 767px){
+
+header .header-nav, .header-social-links {
+    display: none ;
+}
+     
+    main {
+        background-size: 100% 200px;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .main-section {
+        flex-basis: 0%;
+        margin-right: 0px;
+        position: relative;
+    }
+    .main-section img {
+        width: 400px;
+        height: unset;
+    }
+    .main-section h1 {
+        font-size: 60px;
+        margin: -40px; /* Adiciona um espaçamento para evitar que o texto encoste nas bordas */
+    }
+    
+    .second-section {
+        margin: 50px 0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        gap: 50px;
+    }
+    
+    .second-section img {
+        width: 100%;
+        height: auto;
+    }
+    
+    aside {
+        flex-basis: 30%;
+        margin-top: 50px;
+    }
+    
+    .right-section img {
+        width: 90%;
+        height: auto;
+    }
+
+    .right-section h4 {
+        font-size: 18px;
+    }
+    
+    .right-section p {
+        font-size: 14px;
+    }
+    
+    foter .header-social-links {
+        display:contents;
+        align-items: center;
+        gap: 10px;
+    }
+};
+
+/*Tablet*/
+
+@media  and (min-width: 768px) and (max-width: 1023px) {
+    
+}
